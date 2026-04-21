@@ -6,7 +6,7 @@
 #    By: kuyu <kuyu@student.codam.nl>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/20 20:09:18 by kuyu              #+#    #+#              #
-#    Updated: 2026/04/20 20:12:25 by kuyu             ###   ########.fr        #
+#    Updated: 2026/04/21 11:08:43 by kuyu             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
-%.o: %.cpp:
+%.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
