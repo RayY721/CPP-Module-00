@@ -6,7 +6,7 @@
 #    By: kuyu <kuyu@student.codam.nl>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/20 20:09:18 by kuyu              #+#    #+#              #
-#    Updated: 2026/04/21 11:08:43 by kuyu             ###   ########.fr        #
+#    Updated: 2026/04/26 20:38:35 by kuyu             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,5 +31,7 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
+
+re: fclean all
 
 .PHONY: all clean fclean re
