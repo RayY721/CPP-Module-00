@@ -1,8 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kuyu <kuyu@student.codam.nl>               +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/04 19:04:34 by kuyu              #+#    #+#             */
+/*   Updated: 2026/05/04 19:09:45 by kuyu             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 // At runtime, the program repeatedly waits for input:
 // ADD / SEARCH/ EXIT
 // ADD: Ask for : first name, last name, nickname, phone number, darkest secret
-// No ield can be empty
+// No field can be empty
 
 // max 8 contacts, if more than 8, the oldest one will be replaced by the new one
 // ** Circular buffer **

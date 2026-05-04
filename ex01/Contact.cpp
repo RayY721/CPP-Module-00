@@ -1,5 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Contact.cpp                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kuyu <kuyu@student.codam.nl>               +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/04 19:03:23 by kuyu              #+#    #+#             */
+/*   Updated: 2026/05/04 19:03:28 by kuyu             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Contact.hpp"
+#include <iostream>
+#include <iomanip>
 
 Contact::Contact()
 {
@@ -7,18 +20,18 @@ Contact::Contact()
 }
 
 void Contact::setContact(
-    const std::string& first,
-    const std::string& last,
-    const std::string& nick,
-    const std::string& phone,
-    const std::string& secret
+	const std::string& first,
+	const std::string& last,
+	const std::string& nick,
+	const std::string& phone,
+	const std::string& secret
 )
 {
-    _firstName = first;
-    _lastName = last;
-    _nickName = nick;
-    _phoneNumber = phone;
-    _darkestSecret = secret;
+	_firstName = first;
+	_lastName = last;
+	_nickName = nick;
+	_phoneNumber = phone;
+	_darkestSecret = secret;
 }
 
 void Contact::displayFullContact() const
@@ -40,7 +53,8 @@ void Contact::displayContactSummary(int index) const
 
 std::string Contact::formatField(const std::string& str) const
 {
-    if (str.length() > 10)
+	if (str.length() > 10)
 		return str.substr(0, 9) + ".";
-    return str;
+	return str;
 }
+
